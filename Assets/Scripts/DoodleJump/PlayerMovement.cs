@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log(moveHorizontal);
         Vector2 movementForce = new Vector2(moveHorizontal, 0);
-        rb.AddForce(movementForce);
+        rb.AddForce(movementForce*moveSpeed);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
