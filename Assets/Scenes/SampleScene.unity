@@ -121,8 +121,8 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 --- !u!4 &259814760 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3871235256693666871, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
-  m_PrefabInstance: {fileID: 9097579190880438695}
+  m_CorrespondingSourceObject: {fileID: 8902198946883684544, guid: a76310f92b7904541821f2954793305a, type: 3}
+  m_PrefabInstance: {fileID: 816686976454311597}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -359,7 +359,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &9097579190880438695
+--- !u!1001 &816686976454311597
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -367,59 +367,68 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6937300976507116912, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
-      propertyPath: m_Name
-      value: DoodleJump_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 203646770598504331, guid: a76310f92b7904541821f2954793305a, type: 3}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 816686976454311598}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.67489
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+    - target: {fileID: 3454224712764773909, guid: a76310f92b7904541821f2954793305a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969078360584588346, guid: a76310f92b7904541821f2954793305a, type: 3}
+      propertyPath: m_Name
+      value: DoodleJump_Prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: a76310f92b7904541821f2954793305a, type: 3}
+--- !u!4 &816686976454311598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3444305984445806455, guid: a76310f92b7904541821f2954793305a, type: 3}
+  m_PrefabInstance: {fileID: 816686976454311597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 9097579190880438695}
+  - {fileID: 816686976454311597}
