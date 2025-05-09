@@ -505,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 717157351454044366, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1139338444547778458, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayer
@@ -516,12 +516,24 @@ PrefabInstance:
       value: -956976007
       objectReference: {fileID: 0}
     - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3178879
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3178879
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0137599
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.40205
+      value: 8.81
       objectReference: {fileID: 0}
     - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11623
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_LocalPosition.z
@@ -562,6 +574,10 @@ PrefabInstance:
     - target: {fileID: 2205474187690059466, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayerID
       value: -956976007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885509356298463880, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.562
       objectReference: {fileID: 0}
     - target: {fileID: 3679909169296998686, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_IsActive
