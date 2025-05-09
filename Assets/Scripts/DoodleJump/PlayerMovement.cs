@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject doodleJumpPrefab;
     public Transform startPoint;
-    [SerializeField] public AudioSource jumpSound;
-    [SerializeField] public AudioSource endSound;
-    [SerializeField] public AudioSource resetSound;
+    public AudioSource jumpSound;
+    public AudioSource endSound;
+    public AudioSource resetSound;
 
     void Awake()
     {
