@@ -4,8 +4,9 @@ public static class GameManager
 {
     public static bool FlappyBirdIsDead = false;
     public static bool FlappyBirdFinished = false;
+    public static bool FlappyBirdStarted = false;
     public static bool DoodleJumpFinished = false;
     public static int index = 0;
 
-    
+
 }

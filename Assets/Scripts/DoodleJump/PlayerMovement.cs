@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject doodleJumpPrefab;
     public Transform startPoint;
+    public AudioSource jumpSound;
+    public AudioSource endSound;
+    public AudioSource resetSound;
 
     void Awake()
     {
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (doodleJumpPrefab != null)
             {
+                endSound.Play();
                 doodleJumpPrefab.SetActive(false);
             }
             else
@@ -38,9 +42,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.collider.CompareTag("edge"))
         {
+            resetSound.Play();
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             transform.position = startPoint.position;
+        }
+        else if (collision.collider.CompareTag("Boxes"))
+        {
+            jumpSound.Play();
         }
     }
 }
