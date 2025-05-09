@@ -14,6 +14,9 @@ public class FlappyMan : MonoBehaviour {
     public AudioSource deathSound;
     private CapsuleCollider2D capsuleCollider2D;
 
+    public Transform startPoint;
+    public bool canMove = true;
+
     private Rigidbody2D rb;
     
     void Start()
@@ -24,7 +27,7 @@ public class FlappyMan : MonoBehaviour {
 
     void Update()
     {
-         if (!FlappyBirdIsDead && Input.GetKeyDown(KeyCode.Space)) {
+         if (canMove && Input.GetKeyDown(KeyCode.Space)) {
             Jump();
          }
     }
@@ -34,7 +37,7 @@ public class FlappyMan : MonoBehaviour {
         Debug.Log("Here");
         if (collision.gameObject.CompareTag(obstactleTag))
         {
-            Death();
+            StartCoroutine(Death());
         }
     }
 
@@ -44,16 +47,40 @@ public class FlappyMan : MonoBehaviour {
         jumpSound.Play();
     }
 
-    void Death()
+    IEnumerator Death()
     {
-        if (FlappyBirdIsDead) {return;}
-
-        FlappyBirdIsDead = true;
         deathSound.Play();
+        canMove = false;
 
-        transform.rotation = Quaternion.Euler(0,0,-180);
+        // Todeseffekt: drehen, Bewegung stoppen, Collider deaktivieren
+        transform.rotation = Quaternion.Euler(0, 0, -180);
         rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
         capsuleCollider2D.enabled = false;
-        Destroy(player, destroyTime);
+
+        // Physik ausschalten, damit keine Bewegung mehr stattfindet
+        // rb.simulated = false;
+
+        // Warten (z. B. für Animation/Sound)
+        yield return new WaitForSeconds(destroyTime);
+        FlappyBirdIsDead = true;
+
+        rb.simulated = false;
+
+
+        // Spieler zurücksetzen
+        transform.position = startPoint.position;
+        transform.rotation = Quaternion.identity;
+        transform.rotation = Quaternion.Euler(0,0,-21);
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Physik und Collider wieder aktivieren
+        rb.simulated = true;
+        Jump();
+        capsuleCollider2D.enabled = true;
+
+        FlappyBirdIsDead = false;
+        canMove = true;
     }
 }
