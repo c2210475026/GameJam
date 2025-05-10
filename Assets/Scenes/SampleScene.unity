@@ -396,8 +396,8 @@ Transform:
   m_GameObject: {fileID: 248526041}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.48, y: -1.43, z: -0}
-  m_LocalScale: {x: 0.085441805, y: 0.10212002, z: 1.0137599}
+  m_LocalPosition: {x: 1.53, y: -1.603, z: -0}
+  m_LocalScale: {x: 0.08461426, y: 0.06171471, z: 1.0137599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 298946864}
@@ -2659,8 +2659,8 @@ Transform:
   m_GameObject: {fileID: 1438377009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.429, y: -1.69, z: 0}
-  m_LocalScale: {x: 0.102906965, y: 0.10863526, z: 1.0137599}
+  m_LocalPosition: {x: 2.47, y: -1.625, z: 0}
+  m_LocalScale: {x: 0.088746965, y: 0.08638676, z: 1.0137599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1305421658}
@@ -2706,8 +2706,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 16607179
-  m_SortingLayer: 1
+  m_SortingLayerID: -956976007
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3866543748846430446, guid: 699882afda920ac44b061bf6e5d8d75d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2758,7 +2758,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.66, y: 8.34}
+    oldSize: {x: 4.62, y: 8.35}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2766,9 +2766,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.6923068, y: 4.2097945}
-      - {x: -1.6575607, y: 3.106469}
-      - {x: -1.3358883, y: 3.0117626}
+    - - {x: 1.8249435, y: 0.28672886}
+      - {x: 1.5833238, y: 0.2415981}
+      - {x: 0.9252087, y: 0.22432089}
+      - {x: 0.07538831, y: 0.24111009}
       - {x: -1.3223054, y: 0.25516888}
       - {x: -1.9198545, y: 0.25349188}
       - {x: -1.995921, y: -0.75328827}
@@ -2778,8 +2779,8 @@ PolygonCollider2D:
       - {x: -1.9710381, y: -1.7990305}
       - {x: -2.01, y: -4.13}
       - {x: 2.3, y: -4.13}
-      - {x: 2.3, y: 3.24}
-      - {x: 1.38, y: 4.16}
+      - {x: 2.1995034, y: 0.1944623}
+      - {x: 1.9075854, y: 0.15950489}
   m_UseDelaunayMesh: 0
 --- !u!1 &1531785009
 GameObject:
@@ -3141,6 +3142,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137168691791259642, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 717157351454044366, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_Name
       value: MainGame
@@ -3152,6 +3157,10 @@ PrefabInstance:
     - target: {fileID: 1139338444547778458, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139338444547778458, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1139338444547778458, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayerID
@@ -3214,6 +3223,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2205474187690059466, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205474187690059466, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayerID
       value: -956976007
       objectReference: {fileID: 0}
@@ -3242,12 +3255,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4415608167168840963, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415608167168840963, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayerID
       value: -956976007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645643195996662723, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4692138627885433666, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692138627885433666, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4692138627885433666, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       propertyPath: m_SortingLayerID
@@ -3257,11 +3282,28 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5683986479151631381, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 199249360466117110, guid: 6eeca4f189bd1f8469ffb2c4e8180f11, type: 3}
+    - target: {fileID: 5683986479151631381, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683986479151631381, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683986479151631381, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6306625675769254179, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
     - {fileID: 3051969860531994631, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
     - {fileID: 2655995209924873355, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
+    - {fileID: 3895175900337644039, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2032881874050607703, guid: 31edcc6f64f196f40b313efd2ae4d304, type: 3}
       insertIndex: -1
@@ -3429,8 +3471,8 @@ Transform:
   m_GameObject: {fileID: 1927274787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0699002, y: -1.6899999, z: 0}
-  m_LocalScale: {x: 0.085441805, y: 0.10212002, z: 1.0137599}
+  m_LocalPosition: {x: 0.99, y: -1.793, z: 0}
+  m_LocalScale: {x: 0.08875833, y: 0.06952397, z: 1.0137599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 298946864}
@@ -4395,8 +4437,8 @@ Transform:
   m_GameObject: {fileID: 2117454557}
   serializedVersion: 2
   m_LocalRotation: {x: -0.022149662, y: 0.010446015, z: 0.7040441, w: 0.70973396}
-  m_LocalPosition: {x: 2.215, y: -2.505, z: -0.009}
-  m_LocalScale: {x: 0.102906965, y: 0.10863526, z: 1.0137599}
+  m_LocalPosition: {x: 2.2908, y: -2.4634, z: -0.0097}
+  m_LocalScale: {x: 0.084785044, y: 0.090547495, z: 1.0137599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1305421658}
@@ -4502,15 +4544,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.8499999, y: 4.16}
-      - {x: -1.5699999, y: 2.79}
-      - {x: -2.27, y: -0.79999995}
+    - - {x: -1.7061441, y: 4.161148}
+      - {x: -1.5727042, y: 3.1895895}
+      - {x: -1.3015097, y: 2.945322}
+      - {x: -1.3698131, y: 0.2891356}
+      - {x: -1.8665725, y: 0.1924779}
+      - {x: -1.9831134, y: -0.6955965}
+      - {x: -2.2845867, y: -0.7944043}
       - {x: -2.27, y: -1.79}
-      - {x: -2.25, y: -1.81}
+      - {x: -2.1956406, y: -1.8606226}
+      - {x: -1.9868358, y: -1.9068452}
       - {x: -2.01, y: -4.13}
-      - {x: 2.3, y: -4.13}
-      - {x: 2.3, y: 3.24}
-      - {x: 1.38, y: 4.16}
+      - {x: 0.82492214, y: -4.073703}
+      - {x: 0.7827565, y: 4.0618205}
+      - {x: 0.33704197, y: 4.1516743}
   m_UseDelaunayMesh: 0
 --- !u!1 &2137072728
 GameObject:
