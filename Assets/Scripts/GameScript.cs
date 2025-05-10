@@ -9,8 +9,9 @@ public class GameScript : MonoBehaviour
     //Element 3 = DoodleJump
     //Element 4 = MainGame3
     //Element 5 = DinoFun
+    //Element 9 = Startscreen
     public GameObject[] worlds;
-    private int oldIndex = 0;
+    private int oldIndex = 9;
 
     void Start()
     {
