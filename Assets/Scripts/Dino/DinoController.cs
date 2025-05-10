@@ -11,14 +11,17 @@ public class DinoController : MonoBehaviour
     public float jumpForce = 5f;
     private Rigidbody2D rb;
     public bool isGrounded = true;
+    public bool isJumping = false;
     private CapsuleCollider2D capsuleCollider2D;
     public GameObject dino;
     public Transform startPosition;
     public AudioSource jumpSound;
     public AudioSource deathSound;
+    private Animator animator;
     
     void Start() {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
     // Update is called once per frame
@@ -29,6 +32,7 @@ public class DinoController : MonoBehaviour
             Debug.Log("INPUT");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
+            animator.SetBool("isJumping", true);
             jumpSound.Play();
         }
     }
@@ -38,6 +42,8 @@ public class DinoController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            animator.SetBool("isJumping", false);
+
             Debug.Log("Landed on ground");
         }
 
