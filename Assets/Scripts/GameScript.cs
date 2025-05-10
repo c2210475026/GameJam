@@ -27,5 +27,10 @@ public class GameScript : MonoBehaviour
             worlds[index].SetActive(true);
             oldIndex = index;
         }
+
+        if (index == 7 && !videoIsPlaying)
+        {
+            Application.Quit();
+        }
     }
 }

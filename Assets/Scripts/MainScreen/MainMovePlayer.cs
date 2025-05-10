@@ -13,7 +13,7 @@ public class MainMovePlayer : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject video;
     private VideoPlayer videoPlayer;
-    
+    public GameObject blackForLevelthree;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -91,23 +91,26 @@ public class MainMovePlayer : MonoBehaviour
 
             if(index==0 && FlappyBirdFinished){
                 videoIsPlaying = true;
-                StartCoroutine(PlayVideo());
+                StartCoroutine(PlayVideo(1));
                 index=2;
             }
             else if(index==2 && DoodleJumpFinished){
                 videoIsPlaying = true;
-                StartCoroutine(PlayVideo());
+                StartCoroutine(PlayVideo(1));
                 index=4;
             }
             else if(index==4 && DinoFunFinished){
-                video.SetActive(true);
+                // video.SetActive(true);
+                videoIsPlaying = true;
+                StartCoroutine(PlayVideo(2));
                 Debug.Log("GAME FINISHED, you escaped");
-                Application.Quit();
+                index = 7;
+                blackForLevelthree.SetActive(true);
             }
         }
     }
 
-    IEnumerator PlayVideo()
+    IEnumerator PlayVideo(int number)
     {
         video.SetActive(true);
         videoPlayer.Play();
@@ -117,8 +120,14 @@ public class MainMovePlayer : MonoBehaviour
 
         while (videoPlayer.isPlaying)
             yield return null;
-
-        yield return new WaitForSeconds(8f);
+        if (number == 1)
+        {
+            yield return new WaitForSeconds(8f);
+        }else
+        {
+            yield return new WaitForSeconds(21f);
+        }
+        
         video.SetActive(false);
         videoIsPlaying = false;
 
