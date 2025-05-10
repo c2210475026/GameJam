@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 376f9060691adfe40b0d5b52cac61b2e
+guid: 10e04fedd5c3e8d44a04b44176a4ab36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2005810684419041266
-    second: game9_0
+      213: -2597933869250696691
+    second: planet11_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: game9_0
+      name: planet11_0
       rect:
         serializedVersion: 2
-        x: 158
-        y: 58
-        width: 649
-        height: 472
+        x: 241
+        y: 88
+        width: 559
+        height: 379
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 4}
+      border: {x: 0, y: 0, z: 0, w: 2}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f7ea73b03216db10800000000000000
-      internalID: 2005810684419041266
+      spriteID: d0a2b5d09e842fbd0800000000000000
+      internalID: -2597933869250696691
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 26cdf11fba76a3444b1566fd3862f1b3
+    spriteID: a18696cf692c1304b8e65a83961877fe
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      game9_0: 2005810684419041266
+      planet11_0: -2597933869250696691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
