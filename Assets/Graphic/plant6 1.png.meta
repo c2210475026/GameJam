@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0ea838b261a29ad43b0331990917a052
+guid: af0b7083172a4db4f9e3afa4591c049e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,13 +116,13 @@ TextureImporter:
       name: plant6_0
       rect:
         serializedVersion: 2
-        x: 296
-        y: 98
-        width: 438
-        height: 328
+        x: 218
+        y: 424
+        width: 618
+        height: 454
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dbb7ea53729358742b9c411330f6b52d
+    spriteID: 71ab009796c2377449a8e6f73ef6ff89
     internalID: 0
     vertices: []
     indices: 
