@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dino Jump_0: -8040087945829057172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

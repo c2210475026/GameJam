@@ -362,6 +362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2734109343693426670, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.49
+      objectReference: {fileID: 0}
     - target: {fileID: 6937300976507116912, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
       propertyPath: m_Name
       value: DoodleJump_Prefab
@@ -983,6 +987,6 @@ SceneRoots:
   - {fileID: 5962658217180022293}
   - {fileID: 2821656565227895904}
   - {fileID: 3594190538874715217}
-  - {fileID: 877643569}
   - {fileID: 2057533263}
+  - {fileID: 877643569}
   - {fileID: 1949405307}
