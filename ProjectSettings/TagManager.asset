@@ -14,6 +14,7 @@ TagManager:
   - VendingMachineDoodle
   - VendingMachineDino
   - Elevator
+  - DinoEnd
   layers:
   - Default
   - TransparentFX

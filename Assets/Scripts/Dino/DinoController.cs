@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using static GameManager;
 using static Manager;
 
 public class DinoController : MonoBehaviour
@@ -48,6 +49,15 @@ public class DinoController : MonoBehaviour
              // dino.gameObject.SetActive(false);
             Restart();  
         }
+
+        if (collision.gameObject.CompareTag("DinoEnd"))
+        {
+            // Main Game 3
+            DinoFunFinished = true;
+            index = 4; 
+        }
+
+
         
     } 
 
