@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource jumpSound;
     public AudioSource endSound;
     public AudioSource resetSound;
+    public GameObject player;
+
 
     void Awake()
     {
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.CompareTag("Finish"))
         {
             endSound.Play();
+            player.SetActive(false);
             DoodleJumpFinished = true;
             index = 2; //HIER INDEX AUF MAIN GAME LEVEL 2 aendern
         }

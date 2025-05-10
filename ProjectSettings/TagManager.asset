@@ -13,6 +13,7 @@ TagManager:
   - VendingMachineFlappy
   - VendingMachineDoodle
   - VendingMachineDino
+  - Elevator
   layers:
   - Default
   - TransparentFX
