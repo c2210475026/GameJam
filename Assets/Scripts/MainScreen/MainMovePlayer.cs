@@ -108,6 +108,25 @@ public class MainMovePlayer : MonoBehaviour
 
             // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }
+        else if (collision.gameObject.CompareTag("Elevator"))
+        {
+            // Wenn ja, gib eine Nachricht in der Konsole aus.
+            Debug.Log("Spieler ist gegen die Aufzug gelaufen!");
+            // Index = 2 -> MainGame2
+            if(index==0 && FlappyBirdFinished){
+                index=2;
+            }
+            // Index = 4 -> MainGame3
+            else if(index==2 && DoodleJumpFinished){
+                index=4;
+            }
+            else if(index==4 && DinoFunFinished){
+                Debug.Log("GAME FINISHED, you escaped");
+            }
+            
+
+            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
+        }
 
         // Du kannst auch den Namen des Objekts ausgeben, mit dem du kollidiert bist, um zu debuggen:
         // Debug.Log("Kollision mit: " + collision.gameObject.name);
