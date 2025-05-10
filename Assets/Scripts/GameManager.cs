@@ -7,7 +7,7 @@ public static class GameManager
     public static bool FlappyBirdStarted = false;
     public static bool DoodleJumpFinished = false;
     public static bool DinoFunFinished = false;
-    public static int index = 0;
+    public static int index = 9;
 
 
 }
