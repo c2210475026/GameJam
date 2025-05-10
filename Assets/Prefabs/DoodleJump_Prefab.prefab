@@ -116,7 +116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7087054475006397602
 Transform:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03d6f3b50209a249950ad0518f21655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 15
   startPoint: {fileID: 1018443481802388952}
   jumpSound: {fileID: 662306461387380061}
   endSound: {fileID: 6750723311201567217}
@@ -2068,7 +2068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5860815679388871505, guid: cf620eef26b51be488aa285d90637ec8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.42
+      value: 9.14
       objectReference: {fileID: 0}
     - target: {fileID: 5860815679388871505, guid: cf620eef26b51be488aa285d90637ec8, type: 3}
       propertyPath: m_LocalPosition.z
