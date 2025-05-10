@@ -1,141 +1,132 @@
 using System;
 using UnityEngine;
+using UnityEngine.Video; // Wichtig für VideoPlayer
+using System.Collections;
 using static GameManager;
-// using UnityEngine.InputSystem; // Du nutzt aktuell das alte Input System mit GetAxisRaw
 
 public class MainMovePlayer : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
-    private Animator animator; // Referenz zum Animator
-    private SpriteRenderer spriteRenderer; // Referenz zum SpriteRenderer
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
     public GameObject video;
-
-    // Start wird einmal beim Start des Scripts aufgerufen
+    private VideoPlayer videoPlayer;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>(); // Animator Komponente holen
-        spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer Komponente holen
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if (rb == null)
+        if (rb == null || spriteRenderer == null)
         {
-            Debug.LogError("Rigidbody2D nicht am Spieler gefunden!");
-            enabled = false;
-            return;
-        }
-        if (animator == null)
-        {
-            Debug.LogError("Animator nicht am Spieler gefunden!");
-            // enabled = false; // Überlege dir, ob das Spiel ohne Animator weiterlaufen soll
-        }
-        if (spriteRenderer == null)
-        {
-            Debug.LogError("SpriteRenderer nicht am Spieler gefunden!");
+            Debug.LogError("Benötigte Komponente fehlt!");
             enabled = false;
             return;
         }
 
         rb.gravityScale = 0f;
+
+        if (video != null)
+        {
+            videoPlayer = video.GetComponent<VideoPlayer>();
+            if (videoPlayer != null)
+            {
+                videoPlayer.loopPointReached += OnVideoFinished;
+            }
+            else
+            {
+                Debug.LogError("VideoPlayer-Komponente nicht gefunden!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Video-GameObject nicht gesetzt!");
+        }
     }
 
-    // [System.Obsolete] // Entferne dies, wenn Update nicht veraltet sein soll
     void Update()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal"); // Wert zwischen -1 und 1
-        float moveVertical = Input.GetAxisRaw("Vertical");     // Wert zwischen -1 und 1
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb.linearVelocity = movement.normalized * moveSpeed;
 
-        // Animator Parameter setzen
         if (animator != null)
         {
-            // Setze den 'Speed'-Parameter für horizontale Bewegung (absoluter Wert)
             animator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
-
-            // Setze den 'VerticalSpeed'-Parameter für vertikale Bewegung (behält Vorzeichen bei)
             animator.SetFloat("VerticalSpeed", moveVertical);
         }
 
-        // Sprite spiegeln basierend auf der horizontalen Eingabe
-        // Dies sollte nur passieren, wenn NICHT die BackRun_Anim läuft (oder deine BackRun_Anim ist symmetrisch)
-        // Für den Moment lassen wir es so, dass gespiegelt wird, wenn man sich links/rechts bewegt,
-        // auch wenn man gleichzeitig hoch geht. Wenn BackRun_Anim eine klare Rückansicht ist,
-        // sollte das Spiegeln hier keinen störenden Effekt haben.
         if (spriteRenderer != null)
         {
-            if (moveHorizontal > 0f) // Bewegung nach rechts
-            {
-                spriteRenderer.flipX = false; // Nicht spiegeln
-            }
-            else if (moveHorizontal < 0f) // Bewegung nach links
-            {
-                spriteRenderer.flipX = true; // Spiegeln
-            }
-            // Wenn moveHorizontal == 0f, bleibt die letzte Ausrichtung erhalten.
+            if (moveHorizontal > 0f) spriteRenderer.flipX = false;
+            else if (moveHorizontal < 0f) spriteRenderer.flipX = true;
         }
     }
 
-    // Diese Methode wird aufgerufen, wenn dieser Collider/Rigidbody einen anderen Collider/Rigidbody berührt.
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        // Überprüfe, ob das Objekt, mit dem wir kollidiert sind, den Tag "VendingMachine" hat.
         if (collision.gameObject.CompareTag("VendingMachineFlappy") && !FlappyBirdFinished)
         {
-            // Wenn ja, gib eine Nachricht in der Konsole aus.
             Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
-            // Index = 1 -> Flappy Bird
             index = 1;
-
-            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }
         else if (collision.gameObject.CompareTag("VendingMachineDoodle") && !DoodleJumpFinished)
         {
-            // Wenn ja, gib eine Nachricht in der Konsole aus.
             Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
-            // Index = 3 -> DoodleJump
             index = 3;
-
-            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }
         else if (collision.gameObject.CompareTag("VendingMachineDino") && !DinoFunFinished)
         {
-            // Wenn ja, gib eine Nachricht in der Konsole aus.
             Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
-            // Index = 5 -> DinoFun
             index = 5;
-
-            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }
         else if (collision.gameObject.CompareTag("Elevator"))
         {
-            // Wenn ja, gib eine Nachricht in der Konsole aus.
             Debug.Log("Spieler ist gegen die Aufzug gelaufen!");
-            // Index = 2 -> MainGame2
-            if(index==0 && FlappyBirdFinished){
-                // elevatr
-                index=2;
 
+            if(index==0 && FlappyBirdFinished){
+                videoIsPlaying = true;
+                StartCoroutine(PlayVideo());
+                index=2;
             }
-            // Index = 4 -> MainGame3
             else if(index==2 && DoodleJumpFinished){
-                // elevator
+                videoIsPlaying = true;
+                StartCoroutine(PlayVideo());
                 index=4;
             }
             else if(index==4 && DinoFunFinished){
-                // Finish cutscene
                 video.SetActive(true);
                 Debug.Log("GAME FINISHED, you escaped");
                 Application.Quit();
             }
-            
-
-            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }
+    }
 
-        // Du kannst auch den Namen des Objekts ausgeben, mit dem du kollidiert bist, um zu debuggen:
-        // Debug.Log("Kollision mit: " + collision.gameObject.name);
+    IEnumerator PlayVideo()
+    {
+        video.SetActive(true);
+        videoPlayer.Play();
+
+        while (!videoPlayer.isPrepared)
+            yield return null;
+
+        while (videoPlayer.isPlaying)
+            yield return null;
+
+        yield return new WaitForSeconds(8f);
+        video.SetActive(false);
+        videoIsPlaying = false;
+
+    }
+
+    void OnVideoFinished(VideoPlayer vp)
+    {
+        Debug.Log("Video ist zu Ende, deaktiviere GameObject.");
+        video.SetActive(false);
     }
 }
