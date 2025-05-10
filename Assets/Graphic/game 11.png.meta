@@ -103,9 +103,9 @@ TextureImporter:
       name: game 11_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 22
         y: 478
-        width: 1024
+        width: 1002
         height: 546
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
