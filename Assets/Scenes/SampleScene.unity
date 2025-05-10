@@ -419,9 +419,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2608704943452870605, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.868
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608704943452870605, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.332
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833386500123120719, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8203594396810136361, guid: 530590793cf624dc68b0b1fcdb28066f, type: 3}
     - target: {fileID: 6937300976507116912, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
       propertyPath: m_Name
       value: DoodleJump_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937300976507116912, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7087054475006397602, guid: f436aeae43bc86b4f9ba5b1139b7431a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,9 +567,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1803247113451219738, guid: e84754d3d73074801a631c48e7c81570, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8853798605509418985, guid: 6c6ccf953efa349a78a01dfece93b0ba, type: 3}
     - target: {fileID: 3570985120401843023, guid: e84754d3d73074801a631c48e7c81570, type: 3}
       propertyPath: m_Name
       value: DinoFun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570985120401843023, guid: e84754d3d73074801a631c48e7c81570, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7910990197631575074, guid: e84754d3d73074801a631c48e7c81570, type: 3}
       propertyPath: m_LocalPosition.x
@@ -616,6 +640,18 @@ PrefabInstance:
     - target: {fileID: 198645543084158963, guid: 46a7012955f294eb797e3d3104d1bec8, type: 3}
       propertyPath: m_Name
       value: Game_FlappyBird
+      objectReference: {fileID: 0}
+    - target: {fileID: 198645543084158963, guid: 46a7012955f294eb797e3d3104d1bec8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435726665911049654, guid: 46a7012955f294eb797e3d3104d1bec8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1528581941426886678, guid: fa126fb77d07d4cbeb8bf9c8bce73692, type: 3}
+    - target: {fileID: 3650630126997164670, guid: 46a7012955f294eb797e3d3104d1bec8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.735
       objectReference: {fileID: 0}
     - target: {fileID: 7623344275160361256, guid: 46a7012955f294eb797e3d3104d1bec8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainGame2
       objectReference: {fileID: 0}
+    - target: {fileID: 1911373275687362835, guid: aa167d583b12c864191972717ca70a3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7603022748991586308, guid: aa167d583b12c864191972717ca70a3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.81
@@ -728,10 +768,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8045945794527290750, guid: aa167d583b12c864191972717ca70a3d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5552235038892527940, guid: f6301f10014875c498ea1e723729dbcb, type: 3}
     - target: {fileID: 9019628072133346027, guid: aa167d583b12c864191972717ca70a3d, type: 3}
       propertyPath: video
       value: 
       objectReference: {fileID: 5618559081398281964}
+    - target: {fileID: 9190542533614589528, guid: aa167d583b12c864191972717ca70a3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -790,14 +838,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3008900777570466827, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.208
+      objectReference: {fileID: 0}
     - target: {fileID: 6057211052757078634, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
       propertyPath: m_Name
       value: MainGame3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057211052757078634, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6587985450851319251, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
       propertyPath: video
       value: 
       objectReference: {fileID: 4468295504654590439}
+    - target: {fileID: 7321191009231166468, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -353201152214648803, guid: f2c1e56f17b394d46baff07a907038b7, type: 3}
     - target: {fileID: 7480444215712537531, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1057,9 +1117,17 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7878308838339689377, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -358741077169394348, guid: 0aa86b3375b16104faf1a245baf90753, type: 3}
     - target: {fileID: 7949275291306671012, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
       propertyPath: m_Name
       value: MainGame1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949275291306671012, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8467012397061636733, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
       propertyPath: video
