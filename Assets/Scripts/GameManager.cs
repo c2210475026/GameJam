@@ -9,5 +9,5 @@ public static class GameManager
     public static bool DinoFunFinished = false;
     public static int index = 9;
 
-
+    //comment
 }
