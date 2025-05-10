@@ -4,7 +4,7 @@ using static GameManager;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    public float moveSpeed = 15f;
     private Rigidbody2D rb;
     public Transform startPoint;
     public AudioSource jumpSound;
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Debug.Log(moveHorizontal);
-        Vector2 movementForce = new Vector2(moveHorizontal, 0);
+        Vector2 movementForce = new Vector2(moveHorizontal * moveSpeed * Time.deltaTime, 0);
         rb.AddForce(movementForce*moveSpeed);
     }
 
