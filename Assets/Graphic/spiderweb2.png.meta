@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9967900e6cf03485bb9421db5c9cb59f
+guid: 77518ce7c5036fe459cc3b850a391dc8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8040087945829057172
-    second: Dino Jump_0
+      213: -3512795855257497899
+    second: spiderweb2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dino Jump_0
+      name: spiderweb2_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 90
-        width: 858
-        height: 864
+        x: 92
+        y: 88
+        width: 835
+        height: 841
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6d75f98c9edb6090800000000000000
-      internalID: -8040087945829057172
+      spriteID: 5de89eef7ca004fc0800000000000000
+      internalID: -3512795855257497899
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Dino Jump_0: -8040087945829057172
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

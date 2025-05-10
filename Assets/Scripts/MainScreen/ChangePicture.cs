@@ -4,25 +4,27 @@ using static GameManager;
 public class ChangePicture : MonoBehaviour
 {
     public Sprite openlift;
-    public string game;
+    public bool flappy;
+    public bool doodle;
+    public bool dino;
 
     void Update()
     {
-        if(game == "flappy")
+        if(flappy)
         {
             if(FlappyBirdFinished)
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = openlift;
             }
         }
-        else if (game == "doodle")
+        else if (doodle)
         {
             if (DoodleJumpFinished)
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = openlift;
             }
         }
-        else if (game == "dino")
+        else if (dino)
         {
             if (DinoFunFinished)
             {

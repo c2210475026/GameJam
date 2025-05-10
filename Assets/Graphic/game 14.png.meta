@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9967900e6cf03485bb9421db5c9cb59f
+guid: 7f0e4feb2d516734cb3c0af88d02c1cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8040087945829057172
-    second: Dino Jump_0
+      213: 6426038881103860413
+    second: game 13_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dino Jump_0
+      name: game 13_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 90
-        width: 858
-        height: 864
+        x: 107
+        y: 32
+        width: 779
+        height: 987
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6d75f98c9edb6090800000000000000
-      internalID: -8040087945829057172
+      spriteID: db25b05d050ed2950800000000000000
+      internalID: 6426038881103860413
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dino Jump_0: -8040087945829057172
+      game 13_0: 6426038881103860413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
