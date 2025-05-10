@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using static GameManager;
 
 public class GameScript : MonoBehaviour
@@ -20,7 +21,7 @@ public class GameScript : MonoBehaviour
 
     void Update()
     {
-        if (oldIndex != index) 
+        if (oldIndex != index && !videoIsPlaying) 
         {
             worlds[oldIndex].SetActive(false);
             worlds[index].SetActive(true);
