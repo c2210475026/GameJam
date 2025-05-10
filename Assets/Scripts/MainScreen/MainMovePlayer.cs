@@ -10,6 +10,7 @@ public class MainMovePlayer : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator; // Referenz zum Animator
     private SpriteRenderer spriteRenderer; // Referenz zum SpriteRenderer
+    public GameObject video;
 
     // Start wird einmal beim Start des Scripts aufgerufen
     void Start()
@@ -114,14 +115,20 @@ public class MainMovePlayer : MonoBehaviour
             Debug.Log("Spieler ist gegen die Aufzug gelaufen!");
             // Index = 2 -> MainGame2
             if(index==0 && FlappyBirdFinished){
+                // elevatr
                 index=2;
+
             }
             // Index = 4 -> MainGame3
             else if(index==2 && DoodleJumpFinished){
+                // elevator
                 index=4;
             }
             else if(index==4 && DinoFunFinished){
+                // Finish cutscene
+                video.SetActive(true);
                 Debug.Log("GAME FINISHED, you escaped");
+                Application.Quit();
             }
             
 
