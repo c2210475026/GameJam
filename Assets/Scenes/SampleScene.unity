@@ -924,6 +924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainGame2
       objectReference: {fileID: 0}
+    - target: {fileID: 3301374248366412215, guid: aa167d583b12c864191972717ca70a3d, type: 3}
+      propertyPath: m_TagString
+      value: VendingMachineDoodle
+      objectReference: {fileID: 0}
     - target: {fileID: 7603022748991586308, guid: aa167d583b12c864191972717ca70a3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.81
@@ -1030,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8067846959402523178, guid: 42b2a4d33cd0ddf4d9e78ae9788e44d0, type: 3}
+      propertyPath: m_TagString
+      value: VendingMachineDino
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1087,6 +1095,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7093536008738345489, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
+      propertyPath: m_TagString
+      value: VendingMachineFlappy
+      objectReference: {fileID: 0}
     - target: {fileID: 7949275291306671012, guid: e9206bb9f4658824aa7acd7675efd213, type: 3}
       propertyPath: m_Name
       value: MainGame1

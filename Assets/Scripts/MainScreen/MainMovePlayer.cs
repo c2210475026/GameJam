@@ -81,12 +81,30 @@ public class MainMovePlayer : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Überprüfe, ob das Objekt, mit dem wir kollidiert sind, den Tag "VendingMachine" hat.
-        if (collision.gameObject.CompareTag("VendingMachine") && !FlappyBirdFinished)
+        if (collision.gameObject.CompareTag("VendingMachineFlappy") && !FlappyBirdFinished)
         {
             // Wenn ja, gib eine Nachricht in der Konsole aus.
             Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
             // Index = 1 -> Flappy Bird
             index = 1;
+
+            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
+        }
+        else if (collision.gameObject.CompareTag("VendingMachineDoodle") && !DoodleJumpFinished)
+        {
+            // Wenn ja, gib eine Nachricht in der Konsole aus.
+            Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
+            // Index = 3 -> DoodleJump
+            index = 3;
+
+            // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
+        }
+        else if (collision.gameObject.CompareTag("VendingMachineDino") && !DinoFunFinished)
+        {
+            // Wenn ja, gib eine Nachricht in der Konsole aus.
+            Debug.Log("Spieler ist gegen die Vending Machine gelaufen!");
+            // Index = 5 -> DinoFun
+            index = 5;
 
             // Hier könntest du in Zukunft weitere Aktionen hinzufügen, z.B. ein UI-Fenster öffnen.
         }

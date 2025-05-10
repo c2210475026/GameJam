@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Boxes
   - edge
+  - VendingMachine
+  - Obstacle
+  - Ground
+  - Cactus
+  - VendingMachineFlappy
+  - VendingMachineDoodle
+  - VendingMachineDino
   layers:
   - Default
   - TransparentFX
