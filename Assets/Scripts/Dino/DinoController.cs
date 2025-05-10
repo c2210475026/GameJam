@@ -8,12 +8,14 @@ public class DinoController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public float jumpForce = 7f;
+    public float jumpForce = 5f;
     private Rigidbody2D rb;
     public bool isGrounded = true;
     private CapsuleCollider2D capsuleCollider2D;
     public GameObject dino;
     public Transform startPosition;
+    public AudioSource jumpSound;
+    public AudioSource deathSound;
     
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -27,6 +29,7 @@ public class DinoController : MonoBehaviour
             Debug.Log("INPUT");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
+            jumpSound.Play();
         }
     }
 
@@ -44,6 +47,7 @@ public class DinoController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             capsuleCollider2D.enabled = false;
+            deathSound.Play();
 
             yield return new WaitForSeconds(2f);
              // dino.gameObject.SetActive(false);

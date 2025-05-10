@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4dc4eb54ff9184081a8cca79a071128f
+guid: 2151f4564c03f4d4ea5c4cd7a53e6bf5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2295893026713814107
-    second: Pixel Panic_0
+      213: -2835826780291061147
+    second: Level2_transparent (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixel Panic_0
+      name: Level2_transparent (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 86
+        y: 81
+        width: 851
+        height: 869
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ab3d64d4795320e0800000000000000
-      internalID: -2295893026713814107
+      spriteID: 56a2634719e15a8d0800000000000000
+      internalID: -2835826780291061147
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Pixel Panic_0: -2295893026713814107
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
