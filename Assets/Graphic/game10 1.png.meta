@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: a2f2ca5f87c614a21923ee1c10c8be5f
+guid: 2b13d92f0777eb44b8af76d44ef1b990
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7605422557452617252
-    second: Level3_0
+      213: 5587217224857350310
+    second: game10_0
+  - first:
+      213: 4849675722933078936
+    second: game10_1
+  - first:
+      213: -6394770488228772987
+    second: game10_2
+  - first:
+      213: -5277989920853357831
+    second: game10_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +105,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level3_0
+      name: game10_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 271
+        y: 89
+        width: 488
+        height: 325
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0f092b678c98d40800000000000000
+      internalID: 5587217224857350310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game10_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 63
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 426c4bf4583eb8960800000000000000
-      internalID: 7605422557452617252
+      spriteID: 89b034510628d4340800000000000000
+      internalID: 4849675722933078936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game10_2
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 65
+        width: 72
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58309f43f163147a0800000000000000
+      internalID: -6394770488228772987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game10_3
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 87
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa81778120d0c6b0800000000000000
+      internalID: -5277989920853357831
       vertices: []
       indices: 
       edges: []
@@ -138,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b7b104b7d0bae943871872be0f19704
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Level3_0: 7605422557452617252
+      game10_0: 5587217224857350310
+      game10_1: 4849675722933078936
+      game10_2: -6394770488228772987
+      game10_3: -5277989920853357831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
