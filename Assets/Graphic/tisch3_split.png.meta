@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tisch3_split_0: -73101472699229850
+      tisch3_split_1: 7886278872335973028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

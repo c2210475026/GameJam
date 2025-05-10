@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static GameManager;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
     private Rigidbody2D rb;
-    public GameObject doodleJumpPrefab;
     public Transform startPoint;
     public AudioSource jumpSound;
     public AudioSource endSound;
@@ -30,15 +30,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("Finish"))
         {
-            if (doodleJumpPrefab != null)
-            {
-                endSound.Play();
-                doodleJumpPrefab.SetActive(false);
-            }
-            else
-            {
-                Debug.LogWarning("DoodleJump_prefab ist nicht zugewiesen!");
-            }
+            endSound.Play();
+            DoodleJumpFinished = true;
+            index = 2; //HIER INDEX AUF MAIN GAME LEVEL 2 aendern
         }
         else if (collision.collider.CompareTag("edge"))
         {
